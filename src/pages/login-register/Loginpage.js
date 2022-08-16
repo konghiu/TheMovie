@@ -55,7 +55,7 @@ const Loginpage = () => {
                               });
                               setTimeout(() => {
                                    dispatch(login(accountLogining))
-                                   navigate('/tai-khoan')
+                                   navigate('/TheMovie/tai-khoan')
                               }, 1000)
                          }
                     }

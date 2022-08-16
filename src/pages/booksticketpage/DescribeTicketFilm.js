@@ -14,7 +14,7 @@ const DescribeSticketFilm = () => {
      useEffect(() => {
           returnTop()
           if(infoTicket.nameFilm === '') {
-               navigate('/khong-kha-dung');
+               navigate('/TheMovie/khong-kha-dung');
           } 
      }, [infoTicket, navigate])
 

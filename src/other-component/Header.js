@@ -54,9 +54,9 @@ const Header = () => {
                                    key={index}
                               >
                                    <Link 
-                                        to={item.access}
+                                        to={'TheMovie/' + item.access}
                                         className={clsx('text-white', {
-                                             'text-gray-400': (location.pathname.includes(item.access)) || (location.pathname === '/' && item.access === 'trang-chu')
+                                             'text-gray-400': (location.pathname.includes(item.access)) || (location.pathname === '/TheMovie' && item.access === 'trang-chu')
                                         })}
                                         onClick={() => {
                                              returnTop();
@@ -64,7 +64,7 @@ const Header = () => {
                                    >{item.title}</Link>
                                    <span 
                                         className={clsx('w-full bg-red-500', {
-                                             'height-1' : (location.pathname.includes(item.access)) || (location.pathname === '/' && item.access === 'trang-chu')
+                                             'height-1' : (location.pathname.includes(item.access)) || (location.pathname === '/TheMovie' && item.access === 'trang-chu')
                                         })}
                                    ></span>
                               </div>

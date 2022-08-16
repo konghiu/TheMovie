@@ -13,7 +13,7 @@ const Contentpage = () => {
      const navigate = useNavigate()
      useEffect(() => {
           if(!routerRedux.describe) {
-               navigate('/khong-kha-dung')
+               navigate('/TheMovie/khong-kha-dung')
           }
           returnTop()
           

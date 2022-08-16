@@ -9,7 +9,7 @@ import './homepage.css'
 const FilmPlaying = () => {
 
      const dispatch = useDispatch()
-     const naivigate = useNavigate()
+     const navigate = useNavigate()
 
      const settings = {
           dots: true,
@@ -48,7 +48,7 @@ const FilmPlaying = () => {
                                                                  room: 'Screen04',
                                                                  address: 'TẦNG 4, VINPEARL BEACHRONT CONDOTEL, SỐ 78-80 TRẦN PHÚ, P.LỘC THỌ, TP.NHA TRANG',
                                                             }))
-                                                            naivigate('/dat-ve')
+                                                            navigate('/TheMovie/dat-ve')
                                                        }}
                                                   >Đặt vé</button>
                                              </div>

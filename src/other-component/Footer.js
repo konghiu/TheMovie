@@ -10,23 +10,23 @@ import { returnTop } from '../exportFunction/exportFunction'
 const navbarFooter = [
      {
           "name": "Phim Chiếu Rạp",
-          "link": "/phim-chieu-rap" 
+          "link": "phim-chieu-rap" 
      }, 
      {
           "name": "Tin Điện Ảnh",
-          "link": "/tin-dien-anh" 
+          "link": "tin-dien-anh" 
      }, 
      {
           "name": "Sao & Sự Kiện",
-          "link": "/sao-su-kien" 
+          "link": "sao-su-kien" 
      }, 
      {
           "name": "Phân tích điện ảnh",
-          "link": "/phan-tich-dien-anh" 
+          "link": "phan-tich-dien-anh" 
      }, 
      {
           "name": "Trailers",
-          "link": "/trailers" 
+          "link": "trailers" 
      }
 ]
 
@@ -40,7 +40,7 @@ const Footer = () => {
                               {
                                    navbarFooter.map((item, index) => (
                                         <Link 
-                                             to={item.link} 
+                                             to={'/TheMovie/' + item.link} 
                                              className='hover:underline' 
                                              key={index}
                                              onClick={() => returnTop()}

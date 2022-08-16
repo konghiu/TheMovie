@@ -20,7 +20,7 @@ const ContentAccount = () => {
      useEffect(() => {
           if(JSON.stringify(infoUser) === '{}') {
                setTimeout(() => {
-                    navigate('/tai-khoan/dang-nhap')
+                    navigate('dang-nhap')
                }, 1000);
           } else {
                setLoading(false);
@@ -52,15 +52,15 @@ const ContentAccount = () => {
                                              <div
                                                   key={item.id}
                                                   className={clsx( "relative mb-1 cursor-pointer", {
-                                                       'bgcl-button-current' : location.pathname.includes(item.url) || ( location.pathname=== '/tai-khoan' && item.id === 1),
-                                                       'bgcl-button-dif' : !location.pathname.includes(item.url) && !(location.pathname=== '/tai-khoan' && item.id === 1)
+                                                       'bgcl-button-current' : location.pathname.includes(item.url) || ( location.pathname=== '/TheMovie/tai-khoan' && item.id === 1),
+                                                       'bgcl-button-dif' : !location.pathname.includes(item.url) && !(location.pathname=== '/TheMovie/tai-khoan' && item.id === 1)
                                                   })}
                                                   onClick={() => navigate(item.url)}
                                              >
                                                   <span
                                                        className={clsx({
-                                                            'ribon-left-current ribon': location.pathname.includes(item.url)  || (location.pathname=== '/tai-khoan' && item.id === 1),
-                                                            'ribon-left ribon': !location.pathname.includes(item.url) && !(location.pathname=== '/tai-khoan' && item.id === 1)
+                                                            'ribon-left-current ribon': location.pathname.includes(item.url)  || (location.pathname=== '/TheMovie/tai-khoan' && item.id === 1),
+                                                            'ribon-left ribon': !location.pathname.includes(item.url) && !(location.pathname=== '/TheMovie/tai-khoan' && item.id === 1)
                                                        })}
                                                   ></span>
                                                   <p 

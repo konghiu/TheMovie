@@ -77,7 +77,7 @@ const Registerpage = () => {
                               }).then(res => res.json()).then(res => console.log(res.accounts))
                               setLoading(false);
                               setTimeout(() => {
-                                   navigate('/tai-khoan/dang-nhap')
+                                   navigate('/TheMovie/tai-khoan/dang-nhap')
                               }, 1000);
                          })
                     }

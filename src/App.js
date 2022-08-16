@@ -43,12 +43,12 @@ const App = () => {
                <SearchHeader />
                <Header />
                <Routes >
-                    <Route path='' element={<Homepage />}/>
-                    <Route path='/trang-chu' element={<Homepage />}/>
-                    <Route path='/tin-dien-anh' element={<Newspage />}/>
-                    <Route path='/sao-su-kien' element={<StarEventpage />}/>
-                    <Route path='/phan-tich-dien-anh' element={<AnalysisFilmpage />}/>
-                    <Route path='/dat-ve' element={<BookSticketpage />} >
+                    <Route path='TheMovie/' element={<Homepage />}/>
+                    <Route path='TheMovie/trang-chu' element={<Homepage />}/>
+                    <Route path='TheMovie/tin-dien-anh' element={<Newspage />}/>
+                    <Route path='TheMovie/sao-su-kien' element={<StarEventpage />}/>
+                    <Route path='TheMovie/phan-tich-dien-anh' element={<AnalysisFilmpage />}/>
+                    <Route path='TheMovie/dat-ve' element={<BookSticketpage />} >
                          <Route path='' element={<DescribeTicketFilm />} />
                          <Route path='mua-ve' element={<ChoseInfoTicket />} >
                               <Route path='' element={<ChoseSeat />} />
@@ -57,7 +57,7 @@ const App = () => {
                               <Route path='thanh-toan' element={<Payment />} />
                          </Route>
                     </Route>
-                    <Route path='/tai-khoan' element={<Accountpage />}>
+                    <Route path='TheMovie/tai-khoan' element={<Accountpage />}>
                          <Route path='' element={<ContentAccount />}>
                               <Route path='' element={<GeneralInfomation />}/>     
                               <Route path='thong-tin-chung' element={<GeneralInfomation />}/>     
@@ -71,8 +71,8 @@ const App = () => {
                          <Route path=':path' element={<LoginRegisterpage />}/>
                     </Route>
                     <Route path='*' element={<Notpage />}/>
-                    <Route path='/khong-kha-dung' element={<Notpage />}/>
-                    <Route path=':content' element={<Contentpage />}/>
+                    <Route path='TheMovie/khong-kha-dung' element={<Notpage />}/>
+                    <Route path='TheMovie/:content' element={<Contentpage />}/>
                </Routes>
                <Footer />
           </div>

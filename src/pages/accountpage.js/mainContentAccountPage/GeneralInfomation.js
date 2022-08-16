@@ -86,7 +86,7 @@ const GeneralInfomation = () => {
                                    <p className='font-semibold text-black'>LIÊN HỆ</p>
                                    <button 
                                         className='rounded-md text-white ml-10 bg-gray-400 px-3'
-                                        onClick={() => navigate('/tai-khoan/chi-tiet-tai-khoan')}
+                                        onClick={() => navigate('/TheMovie/tai-khoan/chi-tiet-tai-khoan')}
                                    >Thay đổi</button>
                               </div>
                               <div className='flex'><p>Tên</p><span className='mx-2'>:</span><p>{infoUser.username}</p></div>

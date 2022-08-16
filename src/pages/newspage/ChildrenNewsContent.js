@@ -14,7 +14,7 @@ const ChildrenNewsContent = props => {
                          type: 'ROUTE',
                          payload: item
                     })
-                    navigate('/cong-hieu-dep-trai')
+                    navigate('/TheMovie/cong-hieu-dep-trai')
                }
           })
      }

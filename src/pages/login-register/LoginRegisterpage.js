@@ -23,12 +23,12 @@ const LoginRegisterpage = () => {
      const { path } = useParams();
 
     useEffect(() => {
-          console.log(path)
+     console.log(path)
           if(path === 'dang-xuat') {
-               navigate('/tai-khoan/dang-nhap');
+               navigate('/TheMovie/tai-khoan/dang-nhap');
                dispatch(login({}))
           } else if (path !== 'dang-ky' && path !== 'dang-nhap') {
-               navigate('/khong-kha-dung')
+               navigate('/TheMovie//khong-kha-dung')
           }
     }, [path, navigate, dispatch])
 
@@ -53,12 +53,12 @@ const LoginRegisterpage = () => {
                               <div className='text-white bg-red-500'>
                                    <button 
                                         className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300'
-                                        onClick={() => navigate('/tai-khoan/dang-nhap')}     
+                                        onClick={() => navigate('/TheMovie/tai-khoan/dang-nhap')}     
                                         style={location.pathname.includes('/dang-nhap') ? {'borderBottom': '3px solid white', 'color': 'white'} : {}}
                                    >Đăng nhập</button>
                                         <button 
                                         className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300'
-                                        onClick={() => navigate('/tai-khoan/dang-ky')}
+                                        onClick={() => navigate('/TheMovie/tai-khoan/dang-ky')}
                                         style={location.pathname.includes('/dang-ky') ? {'borderBottom': '3px solid white', 'color': 'white'} : {}}
                                    >Đăng ký</button>
                               </div>
@@ -88,7 +88,7 @@ const LoginRegisterpage = () => {
                          <p className='text-blue-500 text-lg mb-2'>Bạn đã đăng nhập tài khoản rồi!!!</p>
                          <button
                               className='bg-yellow-600 py-1 px-5 rounded-sm mt-2'
-                              onClick={() => navigate('/tai-khoan')}
+                              onClick={() => navigate('TheMovie/tai-khoan')}
                          >TRANG CÁ NHÂN</button>
                     </div>
                }

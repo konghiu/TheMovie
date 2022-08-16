@@ -33,7 +33,7 @@ const ChildrenContent = props => {
                array.forEach(item => {
                     if(item.describe === props.data.describe) {
                          dispatch(route_content(item));
-                         navigate('/cong-hieu-dep-trai');   
+                         navigate('/TheMovie/cong-hieu-dep-trai');   
                     }     
                })
           }

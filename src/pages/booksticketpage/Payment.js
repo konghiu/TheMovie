@@ -34,7 +34,7 @@ const Payment = () => {
      useEffect(() => {
           if(second === 0 && minute === 0) {
                dispatch(delete_all_info_ticket(true))
-               navigate('/trang-chu')
+               navigate('/TheMovie/trang-chu')
           }
           setTimeout(() => {
                setSecond(prev => {

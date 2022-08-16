@@ -11,13 +11,13 @@ const HeaderPattern = props => {
      const handleShowContent = (target) => {
           if(props.name === 'eventsstar') {
                dispatch(route_content(props.data))
-               navigate('/cong-hieu-dep-trai')
+               navigate('/TheMovie/cong-hieu-dep-trai')
           } else {
                dispatch({
                     type: 'ROUTE',
                     payload: props.data
                })
-               navigate('/cong-hieu-dep-trai')
+               navigate('/TheMovie/cong-hieu-dep-trai')
           }    
      }
 

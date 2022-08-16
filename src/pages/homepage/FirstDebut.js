@@ -19,9 +19,9 @@ const FirstDebut = () => {
                payload: data
           })
           if(data) {
-               navigate('/cong-hieu-dep-trai')
+               navigate('/TheMovie/cong-hieu-dep-trai')
           } else {
-               navigate('/khong-kha-dung')
+               navigate('/TheMovie/khong-kha-dung')
           }
      }
 
@@ -66,9 +66,9 @@ const ContentAnother = props => {
           const data = GetContentToDisplay(props.data, props.bigdata, props.name)
           dispatch(route_content(data))
           if(data) {
-               navigate('/cong-hieu-dep-trai')
+               navigate('/TheMovie/cong-hieu-dep-trai')
           } else {
-               navigate('/khong-kha-dung')
+               navigate('/TheMovie/khong-kha-dung')
           }
      }
 

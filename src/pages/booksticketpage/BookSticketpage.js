@@ -13,7 +13,7 @@ const BookSticketpage = () => {
 
 
      useEffect(() => {
-          if(!JSON.stringify(infoAccount) === '{}') navigate('/tai-khoan')
+          if(!JSON.stringify(infoAccount) === '{}') navigate('/TheMovie/tai-khoan')
           return () => {
                dispatch(delete_all_info_ticket(true))
           }

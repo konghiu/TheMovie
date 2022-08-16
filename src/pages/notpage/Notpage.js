@@ -18,7 +18,7 @@ const Notpage = () => {
                          <p className='font-thin text-lg'>Trang bạn yêu cầu không tồn tại</p>
                          <button 
                               className='bg-yellow-600 mt-5 px-5 py-1 text-sm font-semibold rounded-sm'
-                              onClick={() => navigate('/trang-chu')}     
+                              onClick={() => navigate('/TheMovie/trang-chu')}     
                          >VỀ TRANG CHỦ</button>
                     </div>
                </div>

@@ -18,14 +18,14 @@ const ContentChild = props => {
                                         <p 
                                              className='text-2xl italic hover:text-blue-400 cursor-pointer'
                                              onClick={() => {
-                                                  navigate('/' + props.access);
+                                                  navigate('/TheMovie/' + props.access);
                                                   returnTop();
                                              }}
                                         >{props.title}</p>
                                         <p 
                                              className='showUnderline text-sm'
                                              onClick={() => {
-                                                  navigate('/' + props.access);
+                                                  navigate('/TheMovie/' + props.access);
                                                   returnTop();
                                              }}
                                         >Xem thêm <i className="fa-solid fa-angles-right text-sm"></i></p>
@@ -58,9 +58,9 @@ const Children = props => {
           const data = GetContentToDisplay(props.data, props.bigdata, props.name)
           dispatch(route_content(data))
           if(data) {
-               navigate('/cong-hieu-dep-trai')
+               navigate('/TheMovie/cong-hieu-dep-trai')
           } else {
-               navigate('/khong-kha-dung')
+               navigate('/TheMovie/khong-kha-dung')
           }
      }
      

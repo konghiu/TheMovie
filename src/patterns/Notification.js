@@ -19,7 +19,7 @@ const Notification = (props) => {
      const handleSetNotification = () => {
           props.handleCloseNotify({});
           if(props.type === 'booking-ticket-success') {
-               navigate('/tai-khoan/lich-su-giao-dich/hoa-don')
+               navigate('/TheMovie/tai-khoan/lich-su-giao-dich/hoa-don')
                dispatch(delete_all_info_ticket())
           }
      }

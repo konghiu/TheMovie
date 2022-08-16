@@ -24,7 +24,7 @@ const SlideNewsContent = props => {
                if ( item.describe === data.describe ) {
                     console.log(true)
                     dispatch(route_content(data))
-                    navigate('/cong-hieu-dep-trai')
+                    navigate('/TheMovie/cong-hieu-dep-trai')
                }
           })
      };

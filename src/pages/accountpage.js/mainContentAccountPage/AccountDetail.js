@@ -125,7 +125,7 @@ const AccountDetail = props => {
                               message: 'Tài khoản của bạn đã được cập nhật thành công'
                          })
                          setTimeout(() => {
-                              navigate('/tai-khoan/thong-tin-chung')
+                              navigate('/TheMovie/tai-khoan/thong-tin-chung')
                          }, 2000);
                     })
                })   

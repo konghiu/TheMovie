@@ -20,7 +20,7 @@ const ChoseInfoTicket = () => {
      
      // handle move to next page
      const handleNextPage = () => {
-          if(location.pathname.includes('chon-cho-ngoi') || location.pathname === '/dat-ve/mua-ve') navigate('chon-mon-an')
+          if(location.pathname.includes('chon-cho-ngoi') || location.pathname === '/TheMovie/dat-ve/mua-ve') navigate('chon-mon-an')
           else if(location.pathname.includes('chon-mon-an')) navigate('thanh-toan')
      }
 
@@ -37,7 +37,7 @@ const ChoseInfoTicket = () => {
 
      // handle check does the account exist ?
      useEffect(() => {
-          if(infoTicket.nameFilm === '') navigate('/trang-chu');
+          if(infoTicket.nameFilm === '') navigate('/TheMovie/trang-chu');
      }, [infoTicket, navigate])
 
      // hand;e caculate total tickets price
