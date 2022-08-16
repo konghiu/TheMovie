@@ -1,0 +1,81 @@
+.ribon-left-current {
+     background-image: url('../../image/ribon_left.png');
+}
+
+.ribon-left {
+     background-image: url('../../image/ribon_left-ccc.png');
+}
+
+.ribon {
+     background-repeat: no-repeat;
+     background-position: left;
+     position: absolute;
+     height: 100%;
+     width: 30px;
+}
+
+.bgcl-button-init {
+     background-color: #e71a0f;
+     color: white;
+}     
+
+.bgcl-button-current {
+     background-color: #e71a0f;
+     color: white;
+}
+
+.bgcl-button-dif {
+     background-color: #cccccc;
+     color: black;
+}
+
+.receipts {
+     position: relative;
+}
+
+.content-receipt {
+     position: relative;
+     z-index: 1;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     transition: all 0.2s;
+}
+
+
+.buttonReceiptHistory {
+     position: absolute;
+     background-color: transparent;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     bottom: 0;
+     left: 0;
+     z-index: 0;
+     margin: 5px 0;
+}
+
+.buttonReceiptHistory button:hover {
+     color: #e71a0f;
+     background-color: white;
+     border: 1px solid #e71a0f;
+}
+
+.btn-change-avatar {
+     position: relative;
+     padding: 0px 2px;
+     overflow: hidden;
+}
+
+.btn-change-avatar input[type=file] {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     opacity: 0;
+}
+
+.btn-change-avatar:hover button {
+     transform: scale(1.05);
+}

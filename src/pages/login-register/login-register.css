@@ -1,0 +1,58 @@
+.account-slide {
+     width: 500px !important;
+     position: relative !important;
+}
+
+.account-slide .slick-dots {
+     position: relative !important;
+     color: white !important;
+     background-color: transparent !important;
+     bottom: 40px;
+}
+
+.account-slide .slick-dots button::before {
+     font-size: 15px !important;
+}
+
+.account-slide .slick-next {
+     right: 10px !important;
+     z-index: 100 !important;
+}
+
+.account-slide .slick-prev {
+     left: 0px !important;
+     z-index: 100 !important;
+}
+
+.account-slide .slick-next::before {
+     content: '❯' !important;
+     padding: 5px;
+     transition: all 0.5s;
+}
+
+.account-slide .slick-prev::before {
+     content: '❮' !important;
+     padding: 5px;
+     transition: all 0.5s;
+}
+
+.account-slide .slick-next:hover::before {
+     background-color: black;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+     opacity: 0.75;
+     color: white !important;
+}
+
+.account-slide .slick-prev:hover::before {
+     background-color: black;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     opacity: 0.75;
+     color: white !important;
+}
+
+.account-slide .slick-next::before, .account-slide .slick-prev::before {
+     color: black !important;
+     font-size: 40px !important;
+}

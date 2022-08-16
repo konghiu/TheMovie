@@ -1,0 +1,37 @@
+.homepage-slide .slick-track {
+     display: flex !important;
+     height: 300px !important;
+}
+
+.homepage-slide .slick-track .slick-slide-item {
+     height: 300px !important;
+}
+
+.button-filmcontent {
+     padding: 2px 0;
+}
+
+.button-filmcontent:hover {
+     background-color: white;
+     color: red;
+}
+
+.homepage-slide .slick-next:before, .homepage-slide .slick-prev:before {
+     font-size: 40px !important;
+     color: #fff !important;
+}
+.homepage-slide .slick-next {
+     right: -20px !important;
+}
+.homepage-slide .slick-prev  {
+     left: -40px !important;
+}
+
+.showUnderline:hover {
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+.button-trailers {
+     border: 1px solid white;
+}

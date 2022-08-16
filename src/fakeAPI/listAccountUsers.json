@@ -1,0 +1,127 @@
+[
+     {
+          "userID": "001",
+          "username": "Công Hiếu",
+          "avataruser": "https://assets.website-files.com/61d746db24b5f01252d73a25/61d75a9667bec6d5af6cddde_T1%20Logo%20Red.svg",
+          "password": "CongHieudeptrai123",
+          "phone": "0123456789",
+          "email": "conghieucoconcuto@gmail.com",
+          "dateOfBirth": "03",
+          "monthOfBirth": "JAN",
+          "yearOfBirth": "2004",
+          "sex": "Nam",
+          "province": "Khánh Hòa",
+          "favoriteTheater": "CGV Cam Ranh",
+          "transactionHistory": [
+               {
+                    "ticketID": "1",
+                    "settername": "Công Hiếu",
+                    "setteremail": "conghieucoconcuto@gmail.com",
+                    "setterphone": "0123456789",
+                    "codeTicket": "312004",                   
+                    "nameFilm": "THẾ GIỚI KHỦNG LONG: LÃNH ĐỊA",
+                    "info": {
+                         "director": "Colin Trevorrow",
+                         "actors": "Chris Pratt, Bryce Dallas Howard, Isabella Sermon, Omar Sy, Sam Neill",
+                         "category": "Hài, Hoạt Hình, Phiêu Lưu",
+                         "released": "10/06/2022",
+                         "fulltime": "147 phút",
+                         "language": "Tiếng Anh với phụ đề tiếng Việt",
+                         "rated": "C13 - PHIM CẤM KHÁN GIẢ DƯỚI 13 TUỔI",
+                         "brief": "Bốn năm sau kết thúc Jurassic World: Fallen Kingdom, những con khủng long đã thoát khỏi nơi giam cầm và tiến vào thế giới loài người. Giờ đây, chúng xuất hiện ở khắp mọi nơi. Sinh vật to lớn ấy không còn chỉ ở trên đảo như trước nữa mà gần ngay trước mắt, thậm chí còn có thể chạm tới. Owen Grady may mắn gặp lại cô khủng long mà anh và khán giả vô cùng yêu mến - Blue. Tuy nhiên, Blue không đi một mình mà còn đem theo một chú khủng long con khác. Điều này khiến Owen càng quyết tâm bảo vệ mẹ con cô được sinh sống an toàn. Thế nhưng, hai giống loài quá khác biệt. Liệu có thể tồn tại một kỷ nguyên mà khủng long và con người sống chung một cách hòa bình?"               
+                    },
+                    "rap": "Lotte Trần Phú",
+                    "room": "Screen04",
+                    "address": "TẦNG 4, VINPEARL BEACHRONT CONDOTEL, SỐ 78-80 TRẦN PHÚ, P.LỘC THỌ, TP.NHA TRANG", 
+                    "seats": ["D1", "D2"],
+                    "food": [],
+                    "formality": {},
+                    "date": "15/11/2021",
+                    "time": "13:30"
+               },
+               {
+                    "ticketID": "2",
+                    "settername": "Công Hiếu",
+                    "setteremail": "conghieucoconcuto@gmail.com",
+                    "setterphone": "0123456789",
+                    "codeTicket": "312234",                   
+                    "nameFilm": "PHÙ THỦY TỐI THƯỢNG TRONG ĐA VŨ TRỤ HỖN LOẠN",
+                    "info": {
+                         "director": "Sam Raimi",
+                         "actors": "Benedict Cumberbatch, Elizabeth Olsen Rachel McAdams",
+                         "category": "Hành Động, Phiêu Lưu, Thần thoại",
+                         "released": "04/10/2022",
+                         "fulltime": "126  phút",
+                         "language": "Tiếng Anh với phụ đề tiếng Việt",
+                         "rated": "C13 - PHIM CẤM KHÁN GIẢ DƯỚI 13 TUỔI",
+                         "brief": "Sau các sự kiện của Avengers: Endgame, Tiến sĩ Stephen Strange tiếp tục nghiên cứu về Viên đá Thời gian. Nhưng một người bạn cũ đã trở thành kẻ thù tìm cách tiêu diệt mọi phù thủy trên Trái đất, làm xáo trộn kế hoạch của Strange và cũng khiến anh ta mở ra một tội ác khôn lường."               
+                    },
+                    "rap": "Lotte Trần Phú",
+                    "room": "Screen04",
+                    "address": "TẦNG 4, VINPEARL BEACHRONT CONDOTEL, SỐ 78-80 TRẦN PHÚ, P.LỘC THỌ, TP.NHA TRANG", 
+                    "seats": ["D1", "D2"],
+                    "food": [],
+                    "formality": {},
+                    "date": "08/06/2022",
+                    "time": "20:30"
+               }
+          ]
+     },
+     {
+          "userID": "002",
+          "username": "Thảo Ly",
+          "avataruser": "",
+          "password": "ThaoLydepgai46",
+          "phone": "0123456788",
+          "email": "younglymin@gmail.com",
+          "dateOfBirth": "04",
+          "monthOfBirth": "JUN",
+          "yearOfBirth": "2004",
+          "sex": "Nữ",
+          "province": "Khánh Hòa",
+          "favoriteTheater": "Lotte Trần Phú",
+          "transactionHistory": []
+     },
+     {
+          "userID": "003",
+          "username": "unstoppable",
+          "avataruser": "",
+          "password": "CongHieudeptrai123",
+          "phone": "0123456777",
+          "email": "unstoppable@gmail.com",
+          "dateOfBirth": "13",
+          "monthOfBirth": "NOV",
+          "yearOfBirth": "2000",
+          "sex": "Nữ",
+          "province": "Khánh Hòa",
+          "favoriteTheater": "CGV Cam Ranh",
+          "transactionHistory": [
+               {
+                    "ticketID": "1",
+                    "settername": "Công Hiếu",
+                    "setteremail": "conghieucoconcuto@gmail.com",
+                    "setterphone": "0123456789",
+                    "codeTicket": "312004",                   
+                    "nameFilm": "PHÙ THỦY TỐI THƯỢNG TRONG ĐA VŨ TRỤ HỖN LOẠN",
+                    "info": {
+                         "director": "Sam Raimi",
+                         "actors": "Benedict Cumberbatch, Elizabeth Olsen Rachel McAdams",
+                         "category": "Hành Động, Phiêu Lưu, Thần thoại",
+                         "released": "04/10/2022",
+                         "fulltime": "126  phút",
+                         "language": "Tiếng Anh với phụ đề tiếng Việt",
+                         "rated": "C13 - PHIM CẤM KHÁN GIẢ DƯỚI 13 TUỔI",
+                         "brief": "Sau các sự kiện của Avengers: Endgame, Tiến sĩ Stephen Strange tiếp tục nghiên cứu về Viên đá Thời gian. Nhưng một người bạn cũ đã trở thành kẻ thù tìm cách tiêu diệt mọi phù thủy trên Trái đất, làm xáo trộn kế hoạch của Strange và cũng khiến anh ta mở ra một tội ác khôn lường."               
+                    },
+                    "rap": "Lotte Trần Phú",
+                    "room": "Screen04",
+                    "address": "TẦNG 4, VINPEARL BEACHRONT CONDOTEL, SỐ 78-80 TRẦN PHÚ, P.LỘC THỌ, TP.NHA TRANG", 
+                    "seats": ["D1", "D2"],
+                    "food": [],
+                    "date": "11/11/2021",
+                    "formality": {},
+                    "time": "13:30"
+               }
+          ]
+     }
+]

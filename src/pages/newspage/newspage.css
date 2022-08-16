@@ -1,0 +1,20 @@
+.width-slide {
+     width: 800px;
+     /* height: 350px; */
+}
+
+.width-slide .slick-track .slick-slide-item {
+     display: flex !important;
+     height: 350px !important;
+}
+
+.brief-5 {
+     display: block;
+     display: -webkit-box;
+     -webkit-line-clamp: 5;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+}
+
+
+
