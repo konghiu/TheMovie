@@ -9,22 +9,27 @@ import { returnTop } from '../exportFunction/exportFunction'
 
 const navbarFooter = [
      {
+          "id": 1,
           "name": "Phim Chiếu Rạp",
           "link": "phim-chieu-rap" 
      }, 
      {
+          "id": 2,
           "name": "Tin Điện Ảnh",
           "link": "tin-dien-anh" 
      }, 
      {
+          "id": 3,
           "name": "Sao & Sự Kiện",
           "link": "sao-su-kien" 
      }, 
      {
+          "id": 4,
           "name": "Phân tích điện ảnh",
           "link": "phan-tich-dien-anh" 
      }, 
      {
+          "id": 5,
           "name": "Trailers",
           "link": "trailers" 
      }
@@ -38,11 +43,11 @@ const Footer = () => {
                          <p className='text-xl mb-2'>CNM Cam Ranh</p>
                          <div className='grid grid-cols-1 gap-2'>
                               {
-                                   navbarFooter.map((item, index) => (
+                                   navbarFooter.map((item) => (
                                         <Link 
                                              to={'/TheMovie/' + item.link} 
                                              className='hover:underline' 
-                                             key={index}
+                                             key={item.id}
                                              onClick={() => returnTop()}
                                         >{item.name}</Link>
                                    ))
