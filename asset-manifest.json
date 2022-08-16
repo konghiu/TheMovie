@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TheMovie/static/css/main.3339b6eb.css",
-    "main.js": "/TheMovie/static/js/main.6eff31c3.js",
+    "main.js": "/TheMovie/static/js/main.aa950a6c.js",
     "static/js/787.633816a4.chunk.js": "/TheMovie/static/js/787.633816a4.chunk.js",
     "static/media/doctorstrangeposter.jpg": "/TheMovie/static/media/doctorstrangeposter.eebb7451a7353cfb6cfd.jpg",
     "static/media/news_9.png": "/TheMovie/static/media/news_9.1cfab78512f88ad7633b.png",
@@ -93,11 +93,11 @@
     "static/media/slick.woff": "/TheMovie/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TheMovie/index.html",
     "main.3339b6eb.css.map": "/TheMovie/static/css/main.3339b6eb.css.map",
-    "main.6eff31c3.js.map": "/TheMovie/static/js/main.6eff31c3.js.map",
+    "main.aa950a6c.js.map": "/TheMovie/static/js/main.aa950a6c.js.map",
     "787.633816a4.chunk.js.map": "/TheMovie/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3339b6eb.css",
-    "static/js/main.6eff31c3.js"
+    "static/js/main.aa950a6c.js"
   ]
 }
