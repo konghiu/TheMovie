@@ -11,7 +11,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "clsx": "^1.2.1",
-    "gh-pages": "^4.0.0",
     "miragejs": "^0.1.44",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -54,7 +53,7 @@
     ]
   },
   "devDependencies": {
-    "github-pages": "^3.0.2",
+    "gh-pages": "^4.0.0",
     "tailwindcss": "^3.0.24"
   }
 }
