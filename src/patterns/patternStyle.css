@@ -115,3 +115,9 @@
      color: white;
      padding: 0.5px 0.5rem;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+     .advert {
+          display: none;
+     }
+}

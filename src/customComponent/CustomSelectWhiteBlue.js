@@ -3,9 +3,9 @@ import React from 'react'
 const CustomSelectWhiteBlue = props => {
      return (
           <div className='grid grid-cols-1 gap-3'>
-               <label className='text-white font-bold'>{props.label_select}<span className='text-red-500 text-xl'>*</span></label>
+               <label className='text-white font-bold mb:text-sm'>{props.label_select}<span className='text-red-500 text-xl'>*</span></label>
                <select 
-                    className='w-full outline-none text-lg px-1 py-1 bg-blue-100'
+                    className='w-full outline-none text-lg p-1 bg-blue-100 mb:text-sm mb:p-0'
                     defaultValue={props.defaultValue}
                     onChange={(e) => props.handleChangeInputValue(e.target.value)}
                >

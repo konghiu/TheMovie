@@ -95,7 +95,7 @@ const Registerpage = () => {
                {
                     loading && <Loading />
                }
-               <div className='grid grid-cols-1 gap-3 my-5 px-5'>
+               <div className='grid grid-cols-1 gap-3 my-5 px-5  md:w-3/4 sm:w-5/6 mb:w-full'>
                     <CustomInputWhiteBlue 
                          input_name="Tên"
                          input_type="name"
@@ -180,7 +180,7 @@ const Registerpage = () => {
                                                   checked={checkedSex === item}
                                                   onChange={() => setCheckedSex(item)}
                                              />
-                                             <p className='ml-2 text-lg'>{item}</p>
+                                             <p className='ml-2 text-lg mb:text-base'>{item}</p>
                                         </div>
                                    ))
                               }

@@ -41,12 +41,12 @@ const ContentAccount = () => {
                :    
                <div className='width-screen'>
                     <div 
-                         className='w-full flex py-5'
+                         className='w-full flex py-5 sm:flex-col mb:flex-col'
                          style={{'backgroundColor': '#fdfcf0'}}
                     >
-                         <div className='w-1/4 pl-2'>
-                              <p className='text-red-500 ml-2 text-2xl my-2 font-bold'>TÀI KHOẢN CGV</p>
-                              <div className=''>
+                         <div className='w-1/4 pl-2 sm:w-full mb:w-full sm:flex mb:flex justify-between px-2 flex-row-reverse'>
+                              <p className='text-red-500 ml-2 text-2xl text-right my-2 font-bold flex-1 mb:text-xl'>TÀI KHOẢN CGV</p>
+                              <div className='options-userpage flex-1'>
                                    {
                                         itemsNavbar.map(item => (
                                              <div
@@ -64,14 +64,14 @@ const ContentAccount = () => {
                                                        })}
                                                   ></span>
                                                   <p 
-                                                       className='py-1 pl-6'
+                                                       className='py-1 pl-6 mb:text-sm'
                                                   > {item.text}</p>
                                              </div>
                                         ))
                                    }
                               </div>
                          </div>
-                         <div className='flex-1 m-5'>
+                         <div className='flex-1 m-5 mb:mx-0 mb:px-1'>
                               <Outlet />
                          </div>
                     </div>

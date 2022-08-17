@@ -13,7 +13,7 @@ const ContentChild = props => {
                {
                     props.data.length > 0 ?
                          <div className='flex flex-col'>
-                              <div className=' '>
+                              <div className='md:flex-1'>
                                    <div className='flex justify-between items-center text-white py-2'>
                                         <p 
                                              className='text-2xl italic hover:text-blue-400 cursor-pointer'
@@ -65,16 +65,16 @@ const Children = props => {
      }
      
      return (
-          <div className='flex justify-between h-28 mb-10'>
+          <div className='flex justify-between h-28 mb-10 tb-mb:mb-5 tb-mb:h-20'>
                {
                     props.data ?
                     <>
-                         <div className='w-28 h-28 overflow-hidden'>
+                         <div className='w-28 h-28 tb-mb:w-20 tb-mb:h-20'>
                               <img src={props.data.image || props.data.poster} alt='' className='w-full h-full' />
                          </div>
-                         <div className='flex-1 flex flex-col h-full ml-3'>
+                         <div className='flex-1 flex flex-col justify-between h-full ml-3'>
                               <p 
-                                   className='mb-2 text-white cursor-pointer hover:text-blue-400'
+                                   className='text-detail mb-2 text-white cursor-pointer hover:text-blue-400'
                                    onClick={() => handleGetContent()}
                               >{props.data.describe || props.data.title || props.data.name}</p>
                               <p className='text-white'><i className="fa-solid fa-calendar-days text-red-500"></i>  {props.data.info ? props.data.info.released : ""}</p>

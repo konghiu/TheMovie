@@ -82,7 +82,7 @@ const Loginpage = () => {
                {    
                     loading && <Loading />
                }
-               <div className='grid grid-cols-1 gap-3 my-5 px-5'>
+               <div className='grid grid-cols-1 gap-3 my-5 px-5 md:w-3/4 sm:w-5/6 mb:w-full'>
                     {notification.type === 'success' && <p className='text-green-500'>{notification.message}</p>}
                     <CustomInputWhiteBlue 
                          input_name="Email hoặc số điện thoại"

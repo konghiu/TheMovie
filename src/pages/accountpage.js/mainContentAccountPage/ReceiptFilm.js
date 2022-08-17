@@ -44,7 +44,7 @@ const ReceiptFilm = () => {
                     {
                          infoUser.transactionHistory.length > 0
                          ?
-                         <div className='grid grid-cols-3 gap-5'>
+                         <div className='grid grid-cols-3 gap-5 tb-mb:grid-cols-2 mb:grid-cols-1 mb:mx-10'>
                               {    
                                    infoUser.transactionHistory.map((item, index) => (
                                         <div 

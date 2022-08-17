@@ -23,7 +23,7 @@ const ChoseFood = () => {
      return (
           <div className='w-full flex flex-col items-center my-10'>
                <p className='bg-gray-300 w-full font-bold border-2 py-1 text-center'>Bắp nước</p>
-               <div className='grid grid-cols-2 gap-10 my-10'>
+               <div className='grid grid-cols-2 gap-10 my-10 sm:grid-cols-1 mb:grid-cols-1 mb:text-sm'>
                     {
                          menuFood.map(item => (
                               <div

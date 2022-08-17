@@ -31,7 +31,7 @@ const ChildrenNewsContent = props => {
                          </div>
                          <div className='flex-1 text-white flex flex-col'>
                               <p 
-                                   className='text-lg font-semibold my-3 hover:text-blue-400'
+                                   className='text-lg font-semibold my-3 hover:text-blue-400 md:text-base'
                                    onClick={() => handleShowContent()}
                               >{props.data.describe}</p>
                               <p className='text-sm title-detail overflow-hidden opacity-60'>{props.data.content[0].title || props.data.content[0].detail[0]}</p>

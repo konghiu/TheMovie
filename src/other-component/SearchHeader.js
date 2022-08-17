@@ -7,13 +7,13 @@ const SearchHeader = () => {
 
      return (
           <div className='bgcl-main w-full flex justify-center'>
-               <div className='width-screen my-1'>
+               <div className='width-screen my-1 sm:px-3 mb:px-3'>
                     <div
-                         className='rounded-md px-1 float-right w-fit bg-white'
+                         className='rounded-md px-2 float-right w-fit bg-white sm:w-full sm:flex mb:w-full mb:flex items-center justify-between'
                     >
                          <input 
                               placeholder='Tìm kiếm phim, bài viết, trailers...'
-                              className='w-fit outline-none px-1'
+                              className='w-fit outline-none px-1 sm:w-full mb:w-full'
                               value={searchText}
                               onChange={e => setSearchText(e.target.value)}
                          /> 

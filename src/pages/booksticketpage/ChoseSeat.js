@@ -36,17 +36,17 @@ const ChoseSeat = props => {
      }    
 
      return (
-          <div className='w-full flex flex-col items-center my-10'>
+          <div className='w-full flex flex-col items-center my-10 mb:my-5'>
                <p className='bg-gray-300 w-full font-bold border-2 py-1 text-center'>Người / Ghế</p>
-               <div className='my-10 w-full'>
+               <div className='my-10 w-full mb:my-5'>
                     <img src={bg_screen} alt='' className='w-full' />
                </div>
-               <div className='my-10 flex flex-col'>  
+               <div className='my-10 flex flex-col mb:my-5'>  
                     {
                          listSite.map((listSite, index) => (
                               <div
                                    key={index}
-                                   className='grid grid-cols-12 gap-2'
+                                   className='grid grid-cols-12 gap-2 sm:gap-1 sm:text-sm mb:gap-1 mb:text-sm'
                               >
                                    {
                                         listSite.map((child, indexChild) => (

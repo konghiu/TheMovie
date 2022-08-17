@@ -16,7 +16,27 @@ const FilmPlaying = () => {
           infinite: false,
           speed: 500,
           slidesToShow: 5,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          responsive: [
+               {
+                    breakpoint: 1280,
+                    settings: {
+                         slidesToShow: 4,
+                    }
+               },
+               {
+                    breakpoint: 768,
+                    settings: {
+                         slidesToShow: 3,
+                    }
+               },
+               {
+                    breakpoint: 580,
+                    settings: {
+                         slidesToShow: 2,
+                    }
+               }
+          ]
         }
 
      return (
@@ -30,7 +50,7 @@ const FilmPlaying = () => {
                </div>
                <div className='w-full py-5'>
                     <div className='homepage-slide cl-main py-1 mx-10'>
-                         <Slider {...settings} className=''>
+                         <Slider {...settings}  className=''>
                               {
                                    ticketAPI ?
                                    ticketAPI.map((item, index) => (

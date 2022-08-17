@@ -29,18 +29,18 @@ const HeaderPattern = props => {
                               className='flex flex-col w-full text-white p-4 pb-0'
                          >
                               <p 
-                                   className='cursor-pointer hover:text-blue-400'
+                                   className='cursor-pointer hover:text-blue-400 mb:text-sm'
                                    onClick={() => handleShowContent()}     
                               >{props.data.title || props.data.describe}</p>
                               <div 
-                                   className='flex py-4'
+                                   className='flex py-4 sm:flex-col mb:flex-col'
                                    style={{'borderBottom': '0.25px solid white'}}
                               >
                                    <div className='flex-1'>
                                         <img src={props.data.image} alt='' />
                                    </div>
                                    <div className='flex-1 flex flex-col'>
-                                        <p className='ml-5 brief-5 text-blue-200 font-thin'>
+                                        <p className='ml-5 mb-brief text-blue-200 font-thin sm:ml-0 mb:ml-0'>
                                              {
                                                   props.data.content[0].title || props.data.content[0].detail[0]
                                              }

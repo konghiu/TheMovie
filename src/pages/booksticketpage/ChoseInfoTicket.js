@@ -119,77 +119,85 @@ const ChoseInfoTicket = () => {
                {
                    notification.message && notification.message !== '' && <Notification type={notification.type} message={notification.message} handleCloseNotify={() => setNotification({})} />
                }
-               <div className='w-full p-5'>
+               <div className='w-full p-5 mb:p-2'>
                     <div className='border-2 bg-white'>
                          <div className='bg-black w-full'>
                               <p className='text-white py-3 text-2xl font-semibold text-center'>BOOKING ONLINE</p>
                          </div>
-                         <div className='p-2 font-bold bg-yellow-100 border-2'>
+                         <div className='p-2 font-bold bg-yellow-100 mb:text-sm'>
                               <p className=''>CGV Trường Sơn (CGV CT Plaza) | Cinema 1 | Số ghế (123/123)</p>
                               <p className=''>18/07/2022 21:40 ~ 18/07/2022 23:28</p>
                          </div>
                          <div className=''>
                               <Outlet />
                          </div>
-                         <div className='flex justify-between bg-black text-white'>
-                              <div 
-                                   className='flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-gray-800 border-2 cursor-pointer m-2'
-                                   onClick={() => handlePreviousPage()}                              
-                              >     
-                                   <i className="fa-solid fa-angle-left text-4xl"></i>
-                                   <p className='font-semibold'>PREVIOUS</p>
-                              </div>
-                              <div className='flex-1 flex my-2'>
-                                   <div className='flex w-60'>
-                                        <div className='w-20 h-32 mx-2'>
-                                             <img src={infoTicket.image} alt='' className='w-full h-full' />
-                                        </div>
-                                        <p className='flex-1'>{infoTicket.nameFilm}</p>
-                                   </div>
-                                   <div className='flex-1 flex'>
-                                        <div className='grid w-12'>
-                                             <p>Rap</p>
-                                             <p>Suất chiếu</p>
-                                             <p>Phòng chiếu</p>
-                                        </div>
-                                        <div className='grid ml-2'>
-                                             <p>CGV Trường Sơn (CGV CT Plaza)</p>
-                                             <p>18/07/2022 21:40</p>
-                                             <p>cinema 1</p>
-                                             <p>{infoTicket.seats.map(item => item.site + ", ")}</p>
-                                        </div>
-                                   </div>
-                                   <div className='flex flex-1'>
-                                        <div className=''>
-                                             <p>Tên phim</p>
-                                             <p>Compo</p>
-                                             <p>Tổng</p>
-                                        </div>
-                                        <div className='ml-5'>
-                                             <p className='font-semibold italic'>{priceSticket.toLocaleString() + "đ"}</p>
-                                             <p className='font-semibold italic'>{priceFood.toLocaleString() + "đ"}</p>
-                                             <p className='font-semibold italic'>{(priceSticket + priceFood).toLocaleString() + "đ"}</p>
-                                        </div>
-                                   </div>
-                              </div>
-                              {
-                                   !location.pathname.includes('thanh-toan') || location.pathname === '/dat-ve/mua-ve' ?
+                         <div className='info-ticket  flex justify-between bg-black text-white mb:text-sm'>
+                              <div className='info-ticket-1'>
                                    <div 
-                                        className='flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
-                                        onClick={() => handleNextPage()}     
+                                        className='flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-gray-800 border-2 cursor-pointer m-2'
+                                        onClick={() => handlePreviousPage()}                              
                                    >     
-                                        <i className="fa-solid fa-angle-right text-4xl"></i>
-                                        <p className='font-semibold'>NEXT</p>
+                                        <i className="fa-solid fa-angle-left text-4xl"></i>
+                                        <p className='font-semibold'>PREVIOUS</p>
                                    </div>
-                                   :
-                                   <div 
-                                        className='flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
-                                        onClick={() => handlePayment()}     
-                                   >
-                                        <i className="fa-solid fa-cash-register text-4xl"></i>
-                                        <p>PAYMENT</p>
+                              </div>
+                              <div className='info-ticket-2 flex-1 flex my-2'>
+                                   <div className='ticket-2-item-1'>
+                                        <div className='flex w-60'>
+                                             <div className='w-20 h-32 mx-2'>
+                                                  <img src={infoTicket.image} alt='' className='w-full h-full' />
+                                             </div>
+                                             <p className='flex-1'>{infoTicket.nameFilm}</p>
+                                        </div>
                                    </div>
-                              }
+                                   <div className='ticket-2-item-2 flex-1 flex sm:justify-between mb:px-2'>
+                                        <div className='w-fit flex sm:flex-1'>
+                                             <div className='grid w-12'>
+                                                  <p>Rap</p>
+                                                  <p>Suất chiếu</p>
+                                                  <p>Phòng chiếu</p>
+                                             </div>
+                                             <div className='grid ml-2'>
+                                                  <p>Lotte Trần Phú(Nha Trang)</p>
+                                                  <p>18/07/2022 21:40</p>
+                                                  <p>cinema 1</p>
+                                                  <p>{infoTicket.seats.map(item => item.site + ", ")}</p>
+                                             </div>
+                                        </div>
+                                        <div className='flex-1 flex'>
+                                             <div className=''>
+                                                  <p>Tên phim</p>
+                                                  <p>Compo</p>
+                                                  <p>Tổng</p>
+                                             </div>
+                                             <div className='ml-5'>
+                                                  <p className='font-semibold italic'>{priceSticket.toLocaleString() + "đ"}</p>
+                                                  <p className='font-semibold italic'>{priceFood.toLocaleString() + "đ"}</p>
+                                                  <p className='font-semibold italic'>{(priceSticket + priceFood).toLocaleString() + "đ"}</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div className='info-ticket-3'>
+                                   {
+                                        !location.pathname.includes('thanh-toan') || location.pathname === '/dat-ve/mua-ve' ?
+                                        <div 
+                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
+                                             onClick={() => handleNextPage()}     
+                                        >     
+                                             <i className="fa-solid fa-angle-right text-4xl"></i>
+                                             <p className='font-semibold'>NEXT</p>
+                                        </div>
+                                        :
+                                        <div 
+                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
+                                             onClick={() => handlePayment()}     
+                                        >
+                                             <i className="fa-solid fa-cash-register text-4xl"></i>
+                                             <p>PAYMENT</p>
+                                        </div>
+                                   }
+                              </div>
                          </div>
                     </div>
                </div>

@@ -55,11 +55,11 @@ const ChildrenContent = props => {
                          className='py-5 flex text-white'
                          style={{'borderBottom': '0.25px solid white'}}
                     >
-                         <div className='w-1/4'>
-                              <img src={props.data.poster || props.data.image} alt='' />
+                         <div className='w-1/4 mr-8 mb:w-1/3 mb:mr-3'>
+                              <img src={props.data.poster || props.data.image} alt='' className='w-full h-full' />
                          </div>
-                         <div className='flex-1 ml-8'>
-                              <p onClick={() => handleShowContent()} className='font-semibold cursor-pointer hover:text-blue-400'>{props.data.describe}</p>
+                         <div className='flex-1'>
+                              <p onClick={() => handleShowContent()} className='font-semibold cursor-pointer hover:text-blue-400 mb:text-sm'>{props.data.describe}</p>
                               <p className='text-blue-200 text-sm brief-5 font-thin'>
                                    {
                                         props.data.content[0].title || props.data.content[0].detail[0]

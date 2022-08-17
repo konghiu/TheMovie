@@ -1,4 +1,4 @@
-.App {
+/* .App {
      text-align: center;
 }
    
@@ -11,9 +11,9 @@
      .App-logo {
           animation: App-logo-spin infinite 20s linear;
      }
-}
+} */
    
-.App-header {
+/* .App-header {
      background-color: #282c34;
      min-height: 100vh;
      display: flex;
@@ -35,7 +35,7 @@
      to {
        transform: rotate(360deg);
      }
-}
+} */
 
 
 .none-copy {
@@ -78,7 +78,48 @@
 .height-1 {
      height: 1px;
 }
-   
+
+.fixed-table-nav {
+     position: fixed;
+     top: 0;
+}
+
+.nav-toggle {
+     position: relative;
+     display: none;
+     width: fit-content;
+     padding: 0 1rem;
+     z-index: 99;
+}
+
+.nav-toggle div {
+     cursor: pointer;
+     padding: 13px 0px;
+}
+.nav-toggle span {
+     position: relative;
+     display: block;
+     width: 35px;
+     height: 3.5px;
+     background-color: white;
+}
+
+.nav-toggle span::before, .nav-toggle span::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: white;
+}
+.nav-toggle span::before {
+     transition: all 0.25s ease .35s;
+     transform: translateY(-10px);
+}
+.nav-toggle span::after {
+     transition: all 0.25s ease .35s;
+     transform: translateY(10px);
+}
+
 .iconDebut {
      position: absolute;
      top: 50%;
@@ -102,7 +143,8 @@
      background-color: white;
 }
 
-.title-detail {
+.text-detail {
+     /* font-size: 12px; */
      display: block;
      display: -webkit-box;
      -webkit-line-clamp: 2;
@@ -133,10 +175,142 @@
      border-bottom: 1px solid black;
 }
 
-.header {
+.border-t-white-1 {
+     border-top: 1px solid white;
+}
+
+.border-l-white-1 {
+     border-left: 1px solid white;
+}
+
+.border-r-white-1 {
+     border-right: 1px solid white;
+}
+
+.border-b-white-1 {
+     border-bottom: 1px solid white;
+}
+
+.bg-header {
+     position: relative;
      background-image: url(./image/bg-header-moviehub.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      width: 100%;
      height: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+     .width-screen {
+          width: 98vw;
+     }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+     .width-screen {
+          width: 1000px;
+     }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 769px) {
+     .text-detail {
+          font-size: 14px;
+     }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 451px) {
+
+}
+
+/* mobile */
+@media only screen and (max-width: 450px) {
+     .bd-b-white-mb {
+          border-bottom: 1px solid white;
+     }
+     .mb-dark-blue {
+          background-color: #151d28;
+     }
+     .mb-brief {
+          display: block;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+     }
+}
+
+/* table - mobile */
+
+@media only screen and (max-width: 768px) {
+     .mb-dark-blue {
+          background-color: #151d28;
+     }
+     .text-detail {
+          font-size: 14px;
+     }
+     .nav-toggle {
+          display: block;
+     }
+     .table-nav {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          width: 60%;
+          top: 0;
+          left: 0;
+          background-color: #151d28;
+          z-index: 99;
+          transition: all 0.5s ease;
+          transform: translateX(-100%);
+          opacity: 0;
+     }
+
+     .toggle-rotate {
+          transform: translateX(0);
+          transition: all .5s ease;
+     }
+
+     .toggle-rotate span {
+          background-color: transparent;
+     }
+
+     .toggle-rotate span::before {
+          transform: rotate(45deg);
+     }
+
+     .toggle-rotate span::after {
+          transform: rotate(135deg);
+     }
+
+     .table-nav div:nth-child(1) {
+          border-top: 1px solid #ccc;
+     }
+     .table-nav div {
+          padding: 0.5rem 0;
+          margin: 0;
+          font-size: 18px;
+          background-color: #192433;
+          border-bottom: 1px solid #ccc;
+     }
+     .table-nav div span {
+          background-color: transparent;
+     }
+     .navba .cover-pages {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          z-index: 98;
+          transform: translate(100%);
+          transition: all 1s ease;
+     }
+
+     /* day xa hoi */
+     .open-table-nav {
+          transform: translateX(0);
+          opacity: 100%;
+     }
 }

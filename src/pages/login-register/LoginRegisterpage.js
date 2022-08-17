@@ -36,7 +36,7 @@ const LoginRegisterpage = () => {
           infinite: true,
           speed: 0,
           slidesToShow: 1,
-          // slidesToScroll: 1,
+          slidesToScroll: 1,
           arrows: true,
           autoplaySpeed: 5000,
           autoplay: true,
@@ -49,15 +49,15 @@ const LoginRegisterpage = () => {
                     JSON.stringify(infoAccount) === '{}'
                     ?
                     <div className='flex m-5'>
-                         <div className='flex-1 flex flex-col bgcl-main'>
-                              <div className='text-white bg-red-500'>
+                         <div className='flex-1 flex flex-col tb-mb:items-center bgcl-main'>
+                              <div className='w-full text-white bg-red-500 tb-mb:flex justify-center'>
                                    <button 
-                                        className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300'
+                                        className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300 mb:text-base'
                                         onClick={() => navigate('/TheMovie/tai-khoan/dang-nhap')}     
                                         style={location.pathname.includes('/dang-nhap') ? {'borderBottom': '3px solid white', 'color': 'white'} : {}}
                                    >Đăng nhập</button>
                                         <button 
-                                        className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300'
+                                        className='px-5 mx-5 py-1 font-bold text-lg outline-none text-gray-300 mb:text-base'
                                         onClick={() => navigate('/TheMovie/tai-khoan/dang-ky')}
                                         style={location.pathname.includes('/dang-ky') ? {'borderBottom': '3px solid white', 'color': 'white'} : {}}
                                    >Đăng ký</button>
@@ -68,7 +68,7 @@ const LoginRegisterpage = () => {
                                    : <Registerpage />
                               }
                          </div>
-                              <div className='w-1/2 flex justify-center text-white px-5'>
+                         <div className='w-1/2 flex justify-center text-white px-5 tb-mb:hidden'>
                               <Slider {...settings} className='account-slide' >
                                    {
                                         listAccountImg.map((item, index) => (
