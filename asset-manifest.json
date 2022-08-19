@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TheMovie/static/css/main.fdd3c7ba.css",
-    "main.js": "/TheMovie/static/js/main.aae62f33.js",
+    "main.css": "/TheMovie/static/css/main.45f75bcd.css",
+    "main.js": "/TheMovie/static/js/main.334bfeb6.js",
     "static/js/787.633816a4.chunk.js": "/TheMovie/static/js/787.633816a4.chunk.js",
     "static/media/doctorstrangeposter.jpg": "/TheMovie/static/media/doctorstrangeposter.eebb7451a7353cfb6cfd.jpg",
     "static/media/news_9.png": "/TheMovie/static/media/news_9.1cfab78512f88ad7633b.png",
@@ -73,6 +73,7 @@
     "static/media/vutrutihon.jpg": "/TheMovie/static/media/vutrutihon.e5f1af5d638775fe1881.jpg",
     "static/media/moicamap.jpg": "/TheMovie/static/media/moicamap.6a05e8a69d33e323e989.jpg",
     "static/media/momo_icon.png": "/TheMovie/static/media/momo_icon.d72890b1dbe04d8cf2e9.png",
+    "static/media/th.jpg": "/TheMovie/static/media/th.5141e1e52e9fab14dac0.jpg",
     "static/media/fa-regular-400.woff2": "/TheMovie/static/media/fa-regular-400.d79c2ec96ab9ff1161a2.woff2",
     "static/media/bantinchet.jpg": "/TheMovie/static/media/bantinchet.f6c9557529a3b59abaf0.jpg",
     "static/media/atm_icon.png": "/TheMovie/static/media/atm_icon.67015cd92d0958dd975d.png",
@@ -92,12 +93,12 @@
     "static/media/slick.ttf": "/TheMovie/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TheMovie/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TheMovie/index.html",
-    "main.fdd3c7ba.css.map": "/TheMovie/static/css/main.fdd3c7ba.css.map",
-    "main.aae62f33.js.map": "/TheMovie/static/js/main.aae62f33.js.map",
+    "main.45f75bcd.css.map": "/TheMovie/static/css/main.45f75bcd.css.map",
+    "main.334bfeb6.js.map": "/TheMovie/static/js/main.334bfeb6.js.map",
     "787.633816a4.chunk.js.map": "/TheMovie/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdd3c7ba.css",
-    "static/js/main.aae62f33.js"
+    "static/css/main.45f75bcd.css",
+    "static/js/main.334bfeb6.js"
   ]
 }
