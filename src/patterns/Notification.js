@@ -27,7 +27,7 @@ const Notification = (props) => {
      return (
           <div className='notify'>
                <span className='bg-notify'></span>
-               <div className='frame-notify'>
+               <div className='frame-notify mb:w-full'>
                     <i 
                          className="fa-solid fa-xmark"
                          onClick={() => handleSetNotification()}

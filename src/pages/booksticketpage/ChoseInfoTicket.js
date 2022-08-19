@@ -20,7 +20,21 @@ const ChoseInfoTicket = () => {
      
      // handle move to next page
      const handleNextPage = () => {
-          if(location.pathname.includes('chon-cho-ngoi') || location.pathname === '/TheMovie/dat-ve/mua-ve') navigate('chon-mon-an')
+          if(location.pathname.includes('chon-cho-ngoi') || location.pathname === '/TheMovie/dat-ve/mua-ve') {
+               if(infoTicket.seats.length === 0) {
+                    setNotification({
+                         type: 'failed',
+                         message: 'Vui lòng chọn ghế ngồi'
+                    })
+               } else if (infoTicket.seats.length > 8) {
+                    setNotification({
+                         type: 'failed',
+                         message: 'Vui lòng không chọn quá 8 ghế ngồi'
+                    })
+               } else {
+                    navigate('chon-mon-an')
+               }
+          }
           else if(location.pathname.includes('chon-mon-an')) navigate('thanh-toan')
      }
 
@@ -134,11 +148,11 @@ const ChoseInfoTicket = () => {
                          <div className='info-ticket  flex justify-between bg-black text-white mb:text-sm'>
                               <div className='info-ticket-1'>
                                    <div 
-                                        className='flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-gray-800 border-2 cursor-pointer m-2'
+                                        className='flex flex-col items-center justify-center h-32 w-32 sm:w-24 sm:h-24 mb:w-20 mb:h-20 rounded-lg bg-gray-800 border-2 cursor-pointer m-2'
                                         onClick={() => handlePreviousPage()}                              
                                    >     
-                                        <i className="fa-solid fa-angle-left text-4xl"></i>
-                                        <p className='font-semibold'>PREVIOUS</p>
+                                        <i className="fa-solid fa-angle-left text-4xl mb:text-2xl"></i>
+                                        <p className='font-semibold sm:text-sm mb:text-sm'>PREVIOUS</p>
                                    </div>
                               </div>
                               <div className='info-ticket-2 flex-1 flex my-2'>
@@ -150,8 +164,8 @@ const ChoseInfoTicket = () => {
                                              <p className='flex-1'>{infoTicket.nameFilm}</p>
                                         </div>
                                    </div>
-                                   <div className='ticket-2-item-2 flex-1 flex sm:justify-between mb:px-2'>
-                                        <div className='w-fit flex sm:flex-1'>
+                                   <div className='ticket-2-item-2 flex-1 flex justify-between mb:px-2'>
+                                        <div className='flex-1 flex justify-between'>
                                              <div className='grid w-12'>
                                                   <p>Rap</p>
                                                   <p>Suất chiếu</p>
@@ -164,7 +178,7 @@ const ChoseInfoTicket = () => {
                                                   <p>{infoTicket.seats.map(item => item.site + ", ")}</p>
                                              </div>
                                         </div>
-                                        <div className='flex-1 flex'>
+                                        <div className='flex-1 flex justify-center'>
                                              <div className=''>
                                                   <p>Tên phim</p>
                                                   <p>Compo</p>
@@ -182,19 +196,19 @@ const ChoseInfoTicket = () => {
                                    {
                                         !location.pathname.includes('thanh-toan') || location.pathname === '/dat-ve/mua-ve' ?
                                         <div 
-                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
+                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 sm:w-24 sm:h-24 mb:w-20 mb:h-20 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
                                              onClick={() => handleNextPage()}     
                                         >     
-                                             <i className="fa-solid fa-angle-right text-4xl"></i>
-                                             <p className='font-semibold'>NEXT</p>
+                                             <i className="fa-solid fa-angle-right text-4xl mb:text-2xl"></i>
+                                             <p className='font-semibold sm:text-sm mb:text-sm'>NEXT</p>
                                         </div>
                                         :
                                         <div 
-                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
+                                             className=' float-right flex flex-col items-center justify-center h-32 w-32 sm:w-24 sm:h-24 mb:w-20 mb:h-20 rounded-lg bg-red-500 border-2 cursor-pointer m-2'
                                              onClick={() => handlePayment()}     
                                         >
-                                             <i className="fa-solid fa-cash-register text-4xl"></i>
-                                             <p>PAYMENT</p>
+                                             <i className="fa-solid fa-cash-register text-4xl mb:text-2xl"></i>
+                                             <p className='font-semibold sm:text-sm  mb:text-sm'>PAYMENT</p>
                                         </div>
                                    }
                               </div>

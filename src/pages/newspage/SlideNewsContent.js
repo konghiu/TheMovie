@@ -30,16 +30,16 @@ const SlideNewsContent = props => {
      };
 
      return (
-          <div className='cl-main p-4 w-full tb-mb:w-3/5 mb:w-full mb:p-2'>
+          <div className='cl-main p-4 w-full tb-mb:w-3/5 md:p-2 sm:p-1 mb:w-full mb:p-1'>
                     <Slider {...config}  className=''>
                     {
                          props.data[0] ? 
                          props.data.map((item, index) => (
                               <div className='slick-slide-item lg:w-3/5 tb-mb:flex-col cursor-pointer' key={index}>
-                                   <div className='flex h-full tb-mb:h-80 overflow-hidden relative'>
-                                        <img src={item.image} alt='' className='absolute w-full h-full px-1' />
+                                   <div className='flex w-3/5 h-full tb-mb:w-full tb-mb:h-80 overflow-hidden relative'>
+                                        <img src={item.image} alt='' className='absolute w-full h-full px-1 sm:p-0 mb:p-0' />
                                    </div>
-                                   <div className='mb-dark-blue flex-1 px-4 text-white flex flex-col mb:py-2'>
+                                   <div className='mb-dark-blue flex-1 px-4 text-white flex flex-col tb-mb:px-2 tb-mb:py-3 mb:py-2'>
                                         <p 
                                              className='text-lg font-semibold hover:text-blue-400 tb-mb:text-base'
                                              onClick={() => handleGetContent(item)}     

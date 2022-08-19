@@ -52,7 +52,7 @@ const ChildrenContent = props => {
                {
                     props.data ? 
                     <div 
-                         className='py-5 flex text-white'
+                         className='py-5 flex text-white mb:text-sm'
                          style={{'borderBottom': '0.25px solid white'}}
                     >
                          <div className='w-1/4 mr-8 mb:w-1/3 mb:mr-3'>

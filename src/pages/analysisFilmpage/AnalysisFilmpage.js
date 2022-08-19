@@ -15,7 +15,7 @@ const AnalysisFilmpage = () => {
                     <section className='width-screen bg-main flex'>
                          <div className='width-slide flex flex-col'>
                               <HeaderPattern data={analysisFilmAPI[0]} name="analysisfilm"/>
-                              <ContentPattern data={analysisFilmAPI} name="analysisfilm"/>
+                              <ContentPattern data={analysisFilmAPI.filter((item, index) => index !== 0)} name="analysisfilm"/>
                          </div>
                          <AdvertPattern />
                     </section>

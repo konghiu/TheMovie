@@ -25,19 +25,25 @@ const storeInfoSticket = (state=initialState, action) => {
 
      let info_booking_ticket
 
+     const prev_list_seat = [...state.seats];
+     const prev_list_food = [...state.food];
+     
      switch (type) {
           case "SETINFOBASICSETTER": 
-               return info_booking_ticket = {
+               info_booking_ticket = {
                     ...state,
                     ...payload
                }
+               break;
+
           case "FORMALITY_PAYMENT":
-               return info_booking_ticket = {
+               info_booking_ticket = {
                     ...state,
                     formality: payload
                }
+               break;
+
           case "BOOKINGSEAT":
-               const prev_list_seat = [...state.seats];
                let new_list_seat;
                if(prev_list_seat.map(item => item.id).includes(payload[0].id)) {
                     if(payload.length === 1) new_list_seat = prev_list_seat.filter(item => item.id !== payload[0].id)
@@ -48,8 +54,8 @@ const storeInfoSticket = (state=initialState, action) => {
                     seats: new_list_seat
                }
                break;
+
           case "BOOKINGFOOD":
-               const prev_list_food = [...state.food];
                if(prev_list_food.map(item => item.id).includes(payload.id)) {
                     const index = prev_list_food.map(item => item.id).indexOf(payload.id)
                     prev_list_food[index].quantity += 1;
@@ -62,21 +68,22 @@ const storeInfoSticket = (state=initialState, action) => {
                     food: [...prev_list_food]
                }
                break;
+
           case "BOOKINGDECREASEFOOD":
-               const not_yet_decrease_list_food = [...state.food];    
-               const index = not_yet_decrease_list_food.map(item => item.id).indexOf(payload.id)
-               let quantityFood = not_yet_decrease_list_food[index].quantity
+               const index = prev_list_food.map(item => item.id).indexOf(payload.id)
+               let quantityFood = prev_list_food[index].quantity
                if(quantityFood === 1) {
-                    not_yet_decrease_list_food[index].quantity = 0;
-                    not_yet_decrease_list_food.splice(index, 1)
+                    prev_list_food[index].quantity = 0;
+                    prev_list_food.splice(index, 1)
                } else {
-                    not_yet_decrease_list_food[index].quantity -= 1;
+                    prev_list_food[index].quantity -= 1;
                }
                info_booking_ticket = {
                     ...state,
-                    food: [...not_yet_decrease_list_food]
+                    food: [...prev_list_food]
                }
                break;
+
           case "DELETEALLINFOTICKET": 
                info_booking_ticket = {
                     settername: "",

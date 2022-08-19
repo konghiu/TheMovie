@@ -41,17 +41,17 @@ const ContentAccount = () => {
                :    
                <div className='width-screen'>
                     <div 
-                         className='w-full flex py-5 sm:flex-col mb:flex-col'
+                         className='w-full flex py-5 sm:flex-col mb:flex-col mb:text-sm'
                          style={{'backgroundColor': '#fdfcf0'}}
                     >
-                         <div className='w-1/4 pl-2 sm:w-full mb:w-full sm:flex mb:flex justify-between px-2 flex-row-reverse'>
+                         <div className='w-1/4 px-2 sm:w-full mb:w-full sm:flex mb:flex justify-between flex-row-reverse'>
                               <p className='text-red-500 ml-2 text-2xl text-right my-2 font-bold flex-1 mb:text-xl'>TÀI KHOẢN CGV</p>
                               <div className='options-userpage flex-1'>
                                    {
                                         itemsNavbar.map(item => (
                                              <div
                                                   key={item.id}
-                                                  className={clsx( "relative mb-1 cursor-pointer", {
+                                                  className={clsx( "relative mb-1 cursor-pointer sm:ml-1 mb:ml-1", {
                                                        'bgcl-button-current' : location.pathname.includes(item.url) || ( location.pathname=== '/TheMovie/tai-khoan' && item.id === 1),
                                                        'bgcl-button-dif' : !location.pathname.includes(item.url) && !(location.pathname=== '/TheMovie/tai-khoan' && item.id === 1)
                                                   })}
@@ -64,7 +64,7 @@ const ContentAccount = () => {
                                                        })}
                                                   ></span>
                                                   <p 
-                                                       className='py-1 pl-6 mb:text-sm'
+                                                       className='py-1 pl-6 '
                                                   > {item.text}</p>
                                              </div>
                                         ))

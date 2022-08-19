@@ -14,7 +14,7 @@ const NewsContent = () => {
                </div>
                <div className='grid grid-cols-2 gap-5 mt-5 mb:grid-cols-1'>
                     {
-                         newsFilmAPI.map((item, index) => (
+                         newsFilmAPI.filter((item, index) => index !== 0 && index !==  1 && index !== 3).map((item, index) => (
                               <ChildrenNewsContent key={index} data={item} bigdata={newsFilmAPI} />
                          ))
                     }

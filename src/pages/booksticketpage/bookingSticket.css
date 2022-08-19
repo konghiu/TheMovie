@@ -18,6 +18,10 @@
      color: white;
 }
 
+.width-receipt-payment {
+     width: 30%;
+}
+
 @media only screen and (max-width: 1023px) {
      .info-ticket {
           display: grid !important;
@@ -38,5 +42,8 @@
      .ticket-2-item-1 {
           grid-column: 1 / span 2;
           grid-row: 1;
+     }
+     .width-receipt-payment {
+          width: 100%;
      }
 }

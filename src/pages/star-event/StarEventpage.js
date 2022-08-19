@@ -16,7 +16,7 @@ const StarEventpage = () => {
                <section className='width-screen bg-main flex'>
                     <div className='width-slide flex flex-col'>
                          <HeaderPattern data={eventAPI[0]} name="eventsstar"/>
-                         <ContentPattern data={eventAPI} name="eventsstar"/>
+                         <ContentPattern data={eventAPI.filter((item, index) => index !== 0)} name="eventsstar"/>
                     </div>
                     <AdvertPattern />
                </section>

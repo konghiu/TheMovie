@@ -99,7 +99,7 @@ const Header = () => {
                                    >
                                         <Link 
                                              to={'TheMovie/' + item.access}
-                                             className={clsx('text-white', {
+                                             className={clsx('text-white  sm:pl-2 mb:pl-2', {
                                                   'text-gray-400': (location.pathname.includes(item.access)) || (location.pathname === '/TheMovie' && item.access === 'trang-chu')
                                              })}
                                              onClick={() => {

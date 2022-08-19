@@ -50,9 +50,9 @@ const Payment = () => {
 
 
      return (
-          <div className='w-full flex flex-col my-10'>
+          <div className='w-full flex flex-col my-10 tb-mb:my-5'>
                <p className='w-full text-white bg-black font-bold py-2 text-2xl text-center'>THANH TOÁN</p>
-               <div className='flex my-10'>
+               <div className='flex mt-10 tb-mb:mt-5 sm:flex-col mb:flex-col'>
                     <div className=' flex-1 flex flex-col'>
                          <div className='w-full'>
                               <p className='w-full bg-gray-400 py-2 pl-5 italic text-lg'>Bước 1: <span className='not-italic font-bold'>GIẢM GIÁ</span></p>
@@ -98,10 +98,10 @@ const Payment = () => {
                          </div>
                     </div>
                     <div
-                         className='ml-5'
-                         style={{'width': '30%'}}
+                         className='ml-5 md:ml-2 width-receipt-payment sm:mt-2 sm:ml-0 mb:ml-0 mb:mt-5'
+                         // style={{'width': '30%'}}
                     >
-                         <div className='mb-5 cly-main border-black-1 border-gray-400'>
+                         <div className='mb-5 sm:mb-2 mb:mb-1 cly-main border-black-1 border-gray-400'>
                               <HeaderTable text="Tổng cộng" />
                               <MidTable text="STD" price={priceTicket.toLocaleString()} />
                               { 
@@ -112,11 +112,11 @@ const Payment = () => {
                               }
                               <FooterTable price={(priceFood + priceTicket).toLocaleString()} />
                          </div>
-                         <div className='mb-5 cly-main border-black-1 border-gray-400'>
+                         <div className='mb-5 sm:mb-2 mb:mb-1 cly-main border-black-1 border-gray-400'>
                               <HeaderTable text="Khuyến mãi" />
                               <FooterTable price="0" />
                          </div>
-                         <div className='mb-5 cly-main border-black-1 border-gray-400'>
+                         <div className='mb-5 sm:mb-2 mb:mb-1 cly-main border-black-1 border-gray-400'>
                               <HeaderTable text="Tổng số tiền" />
                               {
                                    infoTicket.formality &&
@@ -124,7 +124,7 @@ const Payment = () => {
                               }
                               <FooterTable price={(priceFood + priceTicket).toLocaleString()} />
                          </div>
-                         <div className='mb-5 cly-main border-black-1 border-gray-400'>
+                         <div className='cly-main border-black-1 border-gray-400'>
                               <HeaderTable text="Countdown Clock" />
                               <div className='flex items-center justify-center'>
                                    <div className='flex items-center w-fit'>

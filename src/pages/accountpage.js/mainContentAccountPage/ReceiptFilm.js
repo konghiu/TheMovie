@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Loading from '../../../patterns/Loading';
 import { login } from '../../../redux/action';
+import ma_vach from '../../../image/th.jpg'
 
 const ReceiptFilm = () => {
      
@@ -62,7 +63,7 @@ const ReceiptFilm = () => {
                                              >
                                                   <div className=' bg-pink-100 p-3 rounded-t-lg'>
                                                        <div className='grid grid-cols-2 gap-2'>
-                                                            <div className=''>
+                                                            <div className='w-fit'>
                                                                  <div>
                                                                       <p className='text-gray-500'>Mã đặt vé</p>
                                                                       <p className='font-semibold text-lg'>{item.codeTicket}</p>
@@ -73,8 +74,8 @@ const ReceiptFilm = () => {
                                                                       <p className='font-medium'>{item.date || ''}</p>
                                                                  </div>
                                                             </div>
-                                                            <div>
-                                                                 <p className='text-sm text-center'>code</p>
+                                                            <div className='flex-1 flex items-center justify-center'>
+                                                                 <img src={ma_vach} alt='' className='h-10 w-4/5 mb:w-4/6' />
                                                             </div>
                                                        </div>
                                                        <div>

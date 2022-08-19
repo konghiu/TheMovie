@@ -40,7 +40,7 @@ const DescribeSticketFilm = () => {
                               <div className='w-1/5 sm:w-1/4 mb:w-1/2'>     
                                    <img src={infoTicket.image} alt='' className='w-full' />
                               </div>
-                              <div className='flex-1 ml-7 text-white sm:text-sm sm:ml-2 mb:ml-0 mbb:text-sm'>
+                              <div className='flex-1 ml-7 text-white sm:text-sm sm:ml-2 mb:ml-0 mb:text-sm'>
                                    <p 
                                         className='pb-4 mb-5 font-semibold sm:pb-1 sm:mb-1 mb:pb-1 mb:mb-1'
                                         style={{'borderBottom': '1px solid white'}}
@@ -73,7 +73,7 @@ const DescribeSticketFilm = () => {
                                    </div>
                               </div>
                          </div>
-                         <div className='flex flex-col items-center text-white mt-5'>
+                         <div className='flex flex-col items-center text-white mt-5 mb:text-sm'>
                               <div className='flex justify-between bg-red-500 px-5 py-2 rounded-lg mb-5'>
                                    <p className='cursor-pointer hover:underline'>Xem thêm</p>
                                    <p className='px-3'>|</p>

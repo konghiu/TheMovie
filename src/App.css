@@ -233,6 +233,7 @@
      .mb-brief {
           display: block;
           display: -webkit-box;
+          font-size: 14px;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;

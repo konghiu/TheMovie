@@ -34,7 +34,7 @@ const ChildrenNewsContent = props => {
                                    className='text-lg font-semibold my-3 hover:text-blue-400 md:text-base'
                                    onClick={() => handleShowContent()}
                               >{props.data.describe}</p>
-                              <p className='text-sm title-detail overflow-hidden opacity-60'>{props.data.content[0].title || props.data.content[0].detail[0]}</p>
+                              <p className='text-sm mb-brief overflow-hidden opacity-60'>{props.data.content[0].title || props.data.content[0].detail[0]}</p>
                               <p className='text-sm opacity-30 mt-2'><i className="fa-solid fa-calendar-days text-sm mr-2"></i>{props.data.date || '03-01-2004'}</p>
                          </div>
                     </div>

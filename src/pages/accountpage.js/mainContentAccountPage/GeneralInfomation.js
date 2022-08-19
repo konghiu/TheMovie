@@ -52,11 +52,11 @@ const GeneralInfomation = () => {
                     loading && <Loading />
                }
                <div className='w-full'>
-                    <p className='text-2xl text-white bg-black py-2 w-full text-center'>THÔNG TIN CHUNG</p>
+                    <p className='text-2xl text-white bg-black py-2 w-full text-center mb:text-xl'>THÔNG TIN CHUNG</p>
                     <div className='flex justify-between my-5'>
                          <div className='flex flex-col items-center'>
-                              <div className='border-2 rounded-full border-black overflow-hidden p-1'>
-                                   <img src={infoUser.avataruser || none_avatar} alt='' className='w-32 h-32 rounded-full' />
+                              <div className='border-2 flex items-center justify-center w-32 h-32 rounded-full border-black overflow-hidden p-1'>
+                                   <img src={infoUser.avataruser || none_avatar} alt='' className='rounded-full' />
                               </div>
                               <div className='btn-change-avatar mt-2'>
                                    <button 
@@ -80,7 +80,7 @@ const GeneralInfomation = () => {
                          <p className='text-gray-500'>Với trang này, bạn sẽ quản lý được tất cả thông tin tài khoản của mình.</p>
                     </div>
                     <div className='flex flex-col my-5'>
-                         <p className='font-bold border-b-black-1 text-xl pb-1'>Thông tin tài khoản</p>
+                         <p className='font-bold border-b-black-1 text-xl pb-1 mb:text-base'>Thông tin tài khoản</p>
                          <div className='mt-3 text-gray-500'>
                               <div className='flex my-2'>
                                    <p className='font-semibold text-black'>LIÊN HỆ</p>

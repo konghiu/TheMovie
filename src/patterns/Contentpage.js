@@ -27,20 +27,20 @@ const Contentpage = () => {
           <>
                {
                     routerRedux.describe &&
-                         <section className='width-screen bg-main flex text-white'>
-                              <div className='width-slide flex flex-col p-7'>
+                         <section className='width-screen bg-main flex text-white sm:text-sm mb:text-sm'>
+                              <div className='width-slide flex flex-col p-7 sm:p-2 mb:p-2'>
                                    <div className='relative w-full'>
                                         <img src={routerRedux.image} alt='' className='w-full' />
-                                        <p className='absolute bottom-0 text-white w-full py-2 px-4 text-lg font-semibold bg-opacity-50 bg-black'>{routerRedux.describe}</p>
+                                        <p className='absolute bottom-0 text-white w-full py-2 px-4 text-lg font-semibold bg-opacity-50 bg-black sm:text-base mb:text-sm'>{routerRedux.describe}</p>
                                    </div>    
                                    <div>
                                         {
                                              routerRedux.content.map((item, index) => (
-                                                  <div key={index} className='py-3 text-blue-200'>
+                                                  <div key={index} className='py-3 text-blue-200 sm:py-2 mb:py-1'>
                                                        <p className='font-semibold italic'>{item.title || ''}</p>
                                                        {
                                                             item.detail.map((itemChild, indexChild) => (
-                                                                 <p key={indexChild} className='py-3'>{itemChild}</p>
+                                                                 <p key={indexChild} className='py-3 sm:py-2 mb:py-1'>{itemChild}</p>
                                                             ))
                                                        }
                                                        <div className='w-full'>
