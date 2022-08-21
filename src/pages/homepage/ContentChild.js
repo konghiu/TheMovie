@@ -14,16 +14,16 @@ const ContentChild = props => {
                     props.data.length > 0 ?
                          <div className='flex flex-col'>
                               <div className='md:flex-1'>
-                                   <div className='flex justify-between items-center text-white py-2'>
+                                   <div className='flex sm:flex-col sm:items-start justify-between items-center text-white py-2'>
                                         <p 
-                                             className='text-2xl italic hover:text-blue-400 cursor-pointer'
+                                             className='flex-1 text-2xl italic hover:text-blue-400 cursor-pointer sm:text-xl'
                                              onClick={() => {
                                                   navigate('/TheMovie/' + props.access);
                                                   returnTop();
                                              }}
                                         >{props.title}</p>
                                         <p 
-                                             className='showUnderline text-sm'
+                                             className='hover:underline cursor-pointer text-sm'
                                              onClick={() => {
                                                   navigate('/TheMovie/' + props.access);
                                                   returnTop();
@@ -34,10 +34,10 @@ const ContentChild = props => {
                                         <div className='w-full'>
                                              <img src={props.data[0].image || props.data[0].poster} alt='' className='w-full h-48'/>
                                         </div>
-                                        <p className='h-12 my-3 text-white cursor-pointer hover:text-blue-400 showUnderline'>{props.data[0].describe || props.data[0].title || props.data[0].name}</p>
+                                        <p className='h-12 my-3 text-white cursor-pointer hover:text-blue-400 hover:underline sm:text-sm mb:text-sm'>{props.data[0].describe || props.data[0].title || props.data[0].name}</p>
                                    </div>
                               </div>
-                              <div className='mt-5'>
+                              <div className='mt-5 flex-1'>
                                    <Children data={props.data[3]} bigdata={props.data} name={props.name} />
                                    <Children data={props.data[1]} bigdata={props.data} name={props.name} />
                                    <Children data={props.data[2]} bigdata={props.data} name={props.name} />

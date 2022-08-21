@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import Loading from '../../../patterns/Loading';
 import CustomInputNormal from '../../../customComponent/CustomInputNormal';
 import CustomSelectNormal from '../../../customComponent/CustomSelectNormal';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom'
 import { checkString } from '../../../exportFunction/exportFunction';
 import { listLovely, listSelectCity, listSex } from '../../../exportFunction/exportList'
-import Loading from '../../../patterns/Loading';
 import { login } from '../../../redux/action';
 
 const AccountDetail = props => {
@@ -23,11 +23,16 @@ const AccountDetail = props => {
      const [ newPassword, setNewPassword ] = useState('');
      const [ reNewPassword, setReNewPassword ] = useState('');
 
-     const [ loading, setLoading ] = useState(false);
+     const [ loading, setLoading ] = useState(true);
      const [ notification, setNotification ] = useState({
           type: '',
           message: ''
      });
+
+     useEffect(() => {
+          setLoading(false);
+     }, [])
+
 
      const handleResetPassword = (...listPass) => {
           let type = '';
@@ -190,7 +195,7 @@ const AccountDetail = props => {
                               </div>
                          </div>
                          <div className='my-2'>
-                              <p className='font-semibold'>Tháng sinh</p>
+                              <p className='font-semibold mb:text-sm'>Tháng sinh</p>
                               <p><span>{infoUser.monthOfBirth}</span><span className='mx-2'>{infoUser.dateOfBirth}</span><span>{infoUser.yearOfBirth}</span></p>
                          </div>
                          <div className='my-2'>
@@ -210,8 +215,8 @@ const AccountDetail = props => {
                          </div>
                          {
                               changePassword &&
-                              <div className='flex items-center justify-center bg-white'>
-                                   <div className='w-1/2'>
+                              <div className=''>
+                                   <div className='w-1/2 flex flex-col'>
                                         {notification.type === 'success' && <p className='text-red-500 mt-1 self-'>Mật khẩu của bạn đã được cập nhật thành công</p>}
                                         <CustomInputNormal
                                              input_name="Nhập lại mật khẩu"

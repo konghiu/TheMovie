@@ -8,13 +8,13 @@ import accountImg3 from './login-register-img/3.jpg'
 import './login-register.css' 
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { login } from '../../redux/action'
+import { logout } from '../../redux/action'
+import ForgetPassword from './ForgetPassword'
 
 
 const listAccountImg = [accountImg1, accountImg2, accountImg3]
 
 const LoginRegisterpage = () => {
-
 
      const infoAccount = useSelector(state => state.storeAccount.infoAccount);
      const dispatch = useDispatch();
@@ -23,12 +23,11 @@ const LoginRegisterpage = () => {
      const { path } = useParams();
 
     useEffect(() => {
-     console.log(path)
           if(path === 'dang-xuat') {
                navigate('/TheMovie/tai-khoan/dang-nhap');
-               dispatch(login({}))
-          } else if (path !== 'dang-ky' && path !== 'dang-nhap') {
-               navigate('/TheMovie//khong-kha-dung')
+               dispatch(logout({}))
+          } else if (path !== 'dang-ky' && path !== 'dang-nhap' && path !== 'quen-mat-khau') {
+               navigate('/TheMovie/khong-kha-dung')
           }
     }, [path, navigate, dispatch])
 
@@ -62,11 +61,11 @@ const LoginRegisterpage = () => {
                                         style={location.pathname.includes('/dang-ky') ? {'borderBottom': '3px solid white', 'color': 'white'} : {}}
                                    >Đăng ký</button>
                               </div>
-                              {
-                                   path === 'dang-nhap' 
-                                   ? <Loginpage />
-                                   : <Registerpage />
-                              }
+                              <div className='w-full md:w-3/5 sm:w-5/6 mb:w-full mb:mx-4'>
+                                   {path === 'dang-nhap' && <Loginpage />}
+                                   {path === 'dang-ky' && <Registerpage />}
+                                   {path === 'quen-mat-khau' && <ForgetPassword />}
+                              </div>
                          </div>
                          <div className='w-1/2 flex justify-center text-white px-5 tb-mb:hidden'>
                               <Slider {...settings} className='account-slide' >
@@ -88,7 +87,7 @@ const LoginRegisterpage = () => {
                          <p className='text-blue-500 text-lg mb-2'>Bạn đã đăng nhập tài khoản rồi!!!</p>
                          <button
                               className='bg-yellow-600 py-1 px-5 rounded-sm mt-2'
-                              onClick={() => navigate('TheMovie/tai-khoan')}
+                              onClick={() => navigate('/TheMovie/tai-khoan')}
                          >TRANG CÁ NHÂN</button>
                     </div>
                }

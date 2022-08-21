@@ -157,4 +157,9 @@ export const itemsNavbar = [
           text: "LỊCH SỬ GIAO DỊCH",
           url: 'lich-su-giao-dich'
      },
+     {
+          id: 4,
+          text: "QUẢN LÝ TÀI KHOẢN",
+          url: 'quan-li-tai-khoan'
+     }
 ]

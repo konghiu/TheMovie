@@ -12,7 +12,7 @@ const FilmPlaying = () => {
      const navigate = useNavigate()
 
      const settings = {
-          dots: true,
+          dots: false,
           infinite: false,
           speed: 500,
           slidesToShow: 5,
@@ -41,7 +41,7 @@ const FilmPlaying = () => {
 
      return (
           <div className='width-screen flex flex-col items-center'>
-               <div className='relative text-white text-2xl'>
+               <div className='relative text-white text-2xl mb:text-xl'>
                     <p>PHIM ĐANG CHIẾU</p>
                     <span 
                          className='absolute bg-red-500 w-full'
@@ -60,7 +60,7 @@ const FilmPlaying = () => {
                                              >
                                                   <img src={item.image}  alt='' className='w-full h-full'/>
                                                   <button 
-                                                       className='button-filmcontent absolute bottom-0 w-full bg-red-500 text-white'
+                                                       className='hover:text-red-500 hover:bg-white absolute bottom-0 w-full bg-red-500 text-white'
                                                        onClick={() => {
                                                             dispatch(set_info_basic_setter({
                                                                  ...item,

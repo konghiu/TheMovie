@@ -44,13 +44,11 @@ export const windowScroll = () => {
 
      if(navba) {
           if(pageY < 85) {
-               // navba.style = "position: relative"
-               // navba.classList.remove('width-screen')
-               navba.classList.add('width-screen')
                navba.classList.remove('fixed-table-nav')
+               navba.classList.add('width-screen')
           } else {
-               // navba.style = "position: fixed; top: 0"
-               navba.classList.add('width-screen', 'fixed-table-nav')
+               navba.classList.add('width-screen')
+               navba.classList.add('fixed-table-nav')
           }
      }
 

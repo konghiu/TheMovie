@@ -9,11 +9,12 @@ import { typePayment } from './pattern-data/typePayment'
 
 const Payment = () => {
 
-     const infoTicket = useSelector(state => state.storeInfoTicket)
      const dispatch = useDispatch();
+     const navigate = useNavigate();
+     const infoTicket = useSelector(state => state.storeInfoTicket)
+     const list_food = useSelector(state => state.storeInfoTicket.food)
      const [ minute, setMinute ] = useState(5);
      const [ second, setSecond ] = useState(0);
-     const navigate = useNavigate();
      
      const priceTicket = useMemo(() => {
           let price = 0;
@@ -44,10 +45,6 @@ const Payment = () => {
           }, 1000)
           if(second === 59) setMinute(prev => prev - 1)
      }, [second])
-
-     const list_food = useSelector(state => state.storeInfoTicket.food)
-
-
 
      return (
           <div className='w-full flex flex-col my-10 tb-mb:my-5'>

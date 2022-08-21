@@ -29,6 +29,7 @@ import MoviesWatched from './pages/accountpage.js/mainContentAccountPage/MoviesW
 import ChoseSeat from './pages/booksticketpage/ChoseSeat'
 import ChoseFood from './pages/booksticketpage/ChoseFood'
 import Payment from './pages/booksticketpage/Payment'
+import AccountsManagement from './pages/accountpage.js/mainContentAccountPage/AccountsManagement'
 
 // setupServerAPI()
 
@@ -38,7 +39,7 @@ const App = () => {
 
      return (
           <div 
-               className='banner relative w-full flex flex-col items-center'
+               className='banner relative w-full flex flex-col items-center overflow-x-hidden'
           >
                <SearchHeader />
                <Header />
@@ -67,8 +68,9 @@ const App = () => {
                                    <Route path='phim-da-xem' element={<MoviesWatched/>}/>     
                                    <Route path='hoa-don' element={<ReceiptFilm />}/>    
                               </Route>        
+                              <Route path='quan-li-tai-khoan' element={<AccountsManagement />} />  
                          </Route>
-                         <Route path=':path' element={<LoginRegisterpage />}/>
+                         <Route path=':path' element={<LoginRegisterpage />} />
                     </Route>
                     <Route path='*' element={<Notpage />}/>
                     <Route path='TheMovie/khong-kha-dung' element={<Notpage />}/>

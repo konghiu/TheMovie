@@ -139,8 +139,8 @@ const ChoseInfoTicket = () => {
                               <p className='text-white py-3 text-2xl font-semibold text-center'>BOOKING ONLINE</p>
                          </div>
                          <div className='p-2 font-bold bg-yellow-100 mb:text-sm'>
-                              <p className=''>CGV Trường Sơn (CGV CT Plaza) | Cinema 1 | Số ghế (123/123)</p>
-                              <p className=''>18/07/2022 21:40 ~ 18/07/2022 23:28</p>
+                              <p className=''>Lotte Trần Phú (Nha Trang) | Screen04 | Số ghế (123/123)</p>
+                              <p className=''>18/07/2022 21:40 ~ 18/07/2022 23:30</p>
                          </div>
                          <div className=''>
                               <Outlet />
@@ -166,12 +166,12 @@ const ChoseInfoTicket = () => {
                                    </div>
                                    <div className='ticket-2-item-2 flex-1 flex justify-between mb:px-2'>
                                         <div className='flex-1 flex justify-between'>
-                                             <div className='grid w-12'>
+                                             <div className='grid w-fit'>
                                                   <p>Rap</p>
                                                   <p>Suất chiếu</p>
                                                   <p>Phòng chiếu</p>
                                              </div>
-                                             <div className='grid ml-2'>
+                                             <div className='grid flex-1 ml-2'>
                                                   <p>Lotte Trần Phú(Nha Trang)</p>
                                                   <p>18/07/2022 21:40</p>
                                                   <p>cinema 1</p>

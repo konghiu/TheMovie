@@ -8,6 +8,7 @@ const CustomInputNormal = props => {
           <div className='flex flex-col my-2'>
                <label className='font-semibold'>{props.input_name} <span className='text-red-500'>*</span></label>
                <input 
+                    type={props.type}
                     className='outline-none border-black-1 px-3'
                     placeholder={props.input_name} 
                     value={props.value}

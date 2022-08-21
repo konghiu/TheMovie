@@ -1,5 +1,5 @@
 const initialState = {
-     contentToShow: {}
+     contentToShow: null
 }
 
 const storeRouter = (state = initialState, action) => {

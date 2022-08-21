@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router'
 import returnAwayHeaderSmooth from '../../../customFunction/returnAwayHeaderSmooth'
 import none_avatar from '../../../image/none_avatar.png'
 import show_barcor from '../../../image/show_barcor.png'
-// import T1 from '../../../image/61d75a9667bec6d5af6cddde_T1 Logo Red.svg'
 import Loading from '../../../patterns/Loading'
+import Notification from '../../../patterns/Notification'
 import { login } from '../../../redux/action'
 
 const GeneralInfomation = () => {
@@ -13,10 +13,12 @@ const GeneralInfomation = () => {
      const navigate = useNavigate();
      const dispatch = useDispatch();
      const infoUser = useSelector(state => state.storeAccount.infoAccount);
-     const [ loading, setLoading ] = useState(false);
+     const [ loading, setLoading ] = useState(true);
+     const [ notification, setNotification ] = useState({})
 
      useEffect(() => {
           returnAwayHeaderSmooth()
+          setLoading(false);
      }, [])
 
      const handleSetAvatarUser = async (fileImage) => {
@@ -45,11 +47,20 @@ const GeneralInfomation = () => {
           reader.readAsDataURL(fileImage[0])
      }
 
+     // lưu tài khoản
+     useEffect(() => {
+          if(notification.type === 'saved') {
+               console.log(notification.message)
+          }
+     }, [notification])
 
      return (
           <>
                {    
                     loading && <Loading />
+               }
+               {
+                    notification.message && notification.message !== '' && <Notification type={notification.type} message={notification.message} handleCloseNotify={() => setNotification({})}  />
                }
                <div className='w-full'>
                     <p className='text-2xl text-white bg-black py-2 w-full text-center mb:text-xl'>THÔNG TIN CHUNG</p>

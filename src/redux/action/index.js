@@ -19,6 +19,27 @@ export const get_data_src = payload => {
      }
 }
 
+export const logout = (payload) => {
+     return {
+          type: "LOGOUT",
+          payload: payload
+     }
+}
+
+export const save_account = (payload) => {
+     return {
+          type: "SAVEACCOUNT",
+          payload: payload
+     }
+}
+
+export const remove_account_saved = (payload) => {
+     return {
+          type: "REMOVEACCOUNTSAVED",
+          payload: payload
+     }
+}
+
 export const login = payload => {
      return {
           type: "LOGIN",

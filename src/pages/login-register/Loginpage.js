@@ -82,7 +82,7 @@ const Loginpage = () => {
                {    
                     loading && <Loading />
                }
-               <div className='grid grid-cols-1 gap-3 my-5 px-5 md:w-3/4 sm:w-5/6 mb:w-full'>
+               <div className='grid grid-cols-1 gap-3 my-5 px-5'>
                     {notification.type === 'success' && <p className='text-green-500'>{notification.message}</p>}
                     <CustomInputWhiteBlue 
                          input_name="Email hoặc số điện thoại"
@@ -109,6 +109,11 @@ const Loginpage = () => {
                          className='text-white mt-10 px-8 py-2 bg-red-500 font-semibold outline-none'
                          onClick={() => handleSendInfo([{name: "account",value: account}, {name: "password",value: password}])}
                     >Đăng nhập</button>
+                    <p 
+                         className='text-red-500 text-center my-2 cursor-pointer hover:underline'
+                         onClick={() => navigate('/TheMovie/tai-khoan/quen-mat-khau')}
+                    >Quên mật khẩu</p>
+                    <p></p>
                </div>
           </>
      )

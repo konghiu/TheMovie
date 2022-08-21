@@ -95,7 +95,7 @@ const Registerpage = () => {
                {
                     loading && <Loading />
                }
-               <div className='grid grid-cols-1 gap-3 my-5 px-5  md:w-3/4 sm:w-5/6 mb:w-full'>
+               <div className='grid grid-cols-1 gap-3 my-5 px-5'>
                     <CustomInputWhiteBlue 
                          input_name="Tên"
                          input_type="name"
@@ -190,7 +190,11 @@ const Registerpage = () => {
                     <button 
                          className='text-white mt-10 px-8 py-2 bg-red-500 font-semibold outline-none'
                          onClick={() => handleCheckedInfo()}
-                    >Đăng nhập</button>
+                    >Đăng ký</button>
+                    <p 
+                         className='cursor-pointer text-red-500 text-center hover:underline my-2'
+                         onClick={() => navigate('/TheMovie/tai-khoan/dang-nhap')}
+                    >Đã có tài khoản</p>
                </div>
           </>
      )

@@ -1,19 +1,9 @@
 .homepage-slide .slick-track {
      display: flex !important;
-     height: 300px !important;
 }
 
 .homepage-slide .slick-track .slick-slide-item {
      height: 300px !important;
-}
-
-.button-filmcontent {
-     padding: 2px 0;
-}
-
-.button-filmcontent:hover {
-     background-color: white;
-     color: red;
 }
 
 .homepage-slide .slick-next:before, .homepage-slide .slick-prev:before {
@@ -32,13 +22,9 @@
      cursor: pointer;
 }
 
-.button-trailers {
-     border: 1px solid white;
-}
-
-/* 
-@media only screen and (max-width: 768px) and (min-width: 451px) {
+@media only screen and (max-width: 450px) {
      .homepage-slide .slick-track .slick-slide-item {
-          height: 200px !important;
+          height: 240px !important;
      }
-} */
+
+}

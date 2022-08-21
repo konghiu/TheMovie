@@ -1,3 +1,11 @@
+::-webkit-scrollbar {
+     width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: rgb(71, 71, 71);
+}
+
 .size-12 {
      font-size: 12px;
 }

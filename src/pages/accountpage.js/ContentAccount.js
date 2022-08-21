@@ -18,6 +18,7 @@ const ContentAccount = () => {
      const [ loading, setLoading ] = useState(true);
      
      useEffect(() => {
+          setLoading(true)
           if(JSON.stringify(infoUser) === '{}') {
                setTimeout(() => {
                     navigate('dang-nhap')
@@ -45,13 +46,13 @@ const ContentAccount = () => {
                          style={{'backgroundColor': '#fdfcf0'}}
                     >
                          <div className='w-1/4 px-2 sm:w-full mb:w-full sm:flex mb:flex justify-between flex-row-reverse'>
-                              <p className='text-red-500 ml-2 text-2xl text-right my-2 font-bold flex-1 mb:text-xl'>TÀI KHOẢN CGV</p>
+                              <p className='text-red-500 ml-2 text-2xl text-right md:text-left my-2 font-bold flex-1 mb:text-xl'>TÀI KHOẢN CGV</p>
                               <div className='options-userpage flex-1'>
                                    {
                                         itemsNavbar.map(item => (
                                              <div
                                                   key={item.id}
-                                                  className={clsx( "relative mb-1 cursor-pointer sm:ml-1 mb:ml-1", {
+                                                  className={clsx( "relative mb-1 cursor-pointer ml-1", {
                                                        'bgcl-button-current' : location.pathname.includes(item.url) || ( location.pathname=== '/TheMovie/tai-khoan' && item.id === 1),
                                                        'bgcl-button-dif' : !location.pathname.includes(item.url) && !(location.pathname=== '/TheMovie/tai-khoan' && item.id === 1)
                                                   })}
